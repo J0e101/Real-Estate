@@ -14,4 +14,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('property-single/', views.propingles, name='property-single'),
     path('service-details/', views.servetails, name='service-details'),
+    path('show-contacts/', views.showcontacts, name='show-contacts'),
 ]

@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from RealEstateApp.models import *
 
 
 # Create your views here.
@@ -72,6 +73,10 @@ def propingles(request):
 
 def servetails(request):
     return render(request, 'service-details.html')
+
+def showcontacts(request):
+    all = Contact.objects.all()
+    return render(request, 'showcontacts.html', {'contacts': all})
 
 
 

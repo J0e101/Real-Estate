@@ -9,16 +9,17 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <br><br><br><br>
-<div class="wrapper fadeInDown">
+    <br><br><br><br><br><br><br>
+<div class="wrapper fadeInDown ">
   <div id="formContent">
     <!-- Tabs Titles -->
 
     <!-- Login Form -->
     <form method="post">
         {% csrf_token %}
+        <legend class="mt-5"><h1 class="text-center fadeInDown fw-bolder">Login Here</h1></legend>
       <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
@@ -29,6 +30,7 @@
 
   </div>
 </div>
+    <br><br><br><br><br>
 
 {% endblock %}
 
